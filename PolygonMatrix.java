@@ -12,7 +12,7 @@ public class PolygonMatrix extends Matrix {
 
     public void addSphere(Matrix points){
         System.out.println(points.getCols());
-        int step = 40;
+        int step = 20;
         int lat_start = 0;
         int lat_stop = step;
         int longt_start = 0;
@@ -36,7 +36,7 @@ public class PolygonMatrix extends Matrix {
 
     public void addTorus(Matrix points){
         //System.out.println(points.getCols());
-        int step = 40;
+        int step = 20;
         int lat_start = 0;
         int lat_stop = step;
         int longt_start = 0;

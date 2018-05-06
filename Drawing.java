@@ -250,9 +250,6 @@ public class Drawing {
             if (c > 255){
                 c = 255;
             }
-            if (c < 0){
-                c = 0;
-            }
             returned[i] = c;
         }
         return returned;

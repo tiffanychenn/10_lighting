@@ -100,8 +100,8 @@ public class Matrix {
 
     public static Matrix generateSphere(double cx, double cy, double cz, double r){
         Matrix points = new Matrix(4, 4);
-        for (double phi = 0; phi < 1; phi += 0.025){
-            for (double theta = 0; theta < 1.01; theta += 0.025){
+        for (double phi = 0; phi < 1; phi += 0.05){
+            for (double theta = 0; theta < 1.01; theta += 0.05){
                 double x = r * Math.cos(Math.PI * theta) + cx;
                 double y = r * Math.sin(Math.PI * theta) * Math.cos(phi * 2 * Math.PI) + cy;
                 double z = r * Math.sin(Math.PI * theta) * Math.sin(phi * 2 * Math.PI) + cz;
@@ -113,8 +113,8 @@ public class Matrix {
 
     public static Matrix generateTorus(double cx, double cy, double cz, double r1, double r2){
         Matrix points = new Matrix(4, 4);
-        for (double phi = 0; phi < 1; phi += 0.025){
-            for (double theta = 0; theta < 1; theta += 0.025){
+        for (double phi = 0; phi < 1; phi += 0.05){
+            for (double theta = 0; theta < 1; theta += 0.05){
                 double x = Math.cos(2 * Math.PI * phi) * (r1 * Math.cos(2 * Math.PI * theta) + r2) + cx;
                 double y = r1 * Math.sin(2 * Math.PI * theta) + cy;
                 double z = -1 * Math.sin(2 * Math.PI * phi) * (r1 * Math.cos(2 * Math.PI * theta) + r2) + cz;
